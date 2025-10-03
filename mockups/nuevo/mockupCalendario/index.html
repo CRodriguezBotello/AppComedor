@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión Mensual</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li>Inicio</li>
+        <li>Gestión de hijos</li>
+        <li class="active">Gestión mensual</li>
+        <li>Gestión de tu cuenta</li>
+        <li>Cerrar sesión</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p class="info">Los días mostrados con fondo azul son los que tiene reservados para el comedor.</p>
+    
+    <div class="calendar-container">
+      <div class="controls">
+        <button>Anterior</button>
+        <span>Septiembre 2025</span>
+        <button>Siguiente</button>
+      </div>
+
+      <h2>Pilar de Administración</h2>
+
+      <table class="calendar">
+        <thead>
+          <tr>
+            <th>L</th>
+            <th>M</th>
+            <th>X</th>
+            <th>J</th>
+            <th>V</th>
+            <th>S</th>
+            <th>D</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td><td></td><td>3</td><td>4</td><td>5</td>
+            <td class="disabled">6</td><td class="disabled">7</td>
+            <td><button class="marcar-semana">Marcar semana</button></td>
+          </tr>
+          <tr>
+            <td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+            <td class="disabled">13</td><td class="disabled">14</td>
+            <td><button class="marcar-semana">Marcar semana</button></td>
+          </tr>
+          <tr>
+            <td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+            <td class="disabled">20</td><td class="disabled">21</td>
+            <td><button class="marcar-semana">Marcar semana</button></td>
+          </tr>
+          <tr>
+            <td>22</td><td class="selected">23</td><td class="selected">24</td><td class="selected">25</td><td class="selected">26</td>
+            <td class="disabled">27</td><td class="disabled">28</td>
+            <td><button class="marcar-semana">Marcar semana</button></td>
+          </tr>
+          <tr>
+            <td class="selected">29</td><td class="selected">30</td><td></td><td></td><td></td>
+            <td class="disabled"></td><td class="disabled"></td>
+            <td><button class="marcar-semana">Marcar semana</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="month-control">
+        <button id="select-month">Seleccionar mes entero</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
